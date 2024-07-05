@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Films</title>
+</head>
+<body>
+    <h1>Films</h1>
+    <ul>
+        {% for film in films %}
+        <li>
+            <h2>{{ film.title }}</h2>
+            <p>{{ film.description }}</p>
+            <p><strong>Review:</strong> {{ film.review }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
